@@ -16,8 +16,15 @@ function init(){
     document.body.appendChild(mainHeaderElement);
     mainHeaderElement.appendChild(mainHeaderText);
 
+
+    let initHeaderElement = document.createElement("h3");
+    let initHeaderText = document.createTextNode("Initialization...");
+    document.body.appendChild(initHeaderElement);
+    initHeaderElement.appendChild(initHeaderText);
+
     // Styles
-    document.getElementsByTagName('H1')[0].style.color = "#FFFFFF";
+    document.getElementsByTagName('h1')[0].style.color = "#FFFFFF";
+    document.getElementsByTagName('h3')[0].style.color = "#FFFFFF";
 }
 
 
