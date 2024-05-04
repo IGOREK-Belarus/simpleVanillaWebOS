@@ -38,5 +38,10 @@ function init(){
     document.getElementsByTagName('h3')[1].style.color = "#FFFFFF";
 }
 
+function panic(errorText){
+    // WIP
+    document.body.style.background = "#FF0000";
+    console.error("Kernel panic. Kernel name: " + kernelName + ". Kernel version: " + kernelVersion + ". Error: " + errorText)
+}
 
-init();
+init(); 
