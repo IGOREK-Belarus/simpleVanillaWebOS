@@ -3,7 +3,7 @@ const KernelStream = "DEV";
 const kernelVersion = "1.0.0";
 
 // Firefox doesn't support, so we gonna duplicate data from os.json
-const osName = "superVanillaWebOS"
+const osName = "simpleVanillaWebOS"
 const osStream = "DEV";
 const osVersion = "1.0.0";
 
@@ -22,9 +22,20 @@ function init(){
     document.body.appendChild(initHeaderElement);
     initHeaderElement.appendChild(initHeaderText);
 
+    if(!(osName == undefined && osVersion == undefined)){
+        let osHeaderElement = document.createElement("h3");
+        let osHeaderText = document.createTextNode("Loading " + osName + " " + osVersion);
+        document.body.appendChild(osHeaderElement);
+        osHeaderElement.appendChild(osHeaderText);
+    }
+    else{
+        console.error("OS data is not found!");
+    }
+
     // Styles
     document.getElementsByTagName('h1')[0].style.color = "#FFFFFF";
     document.getElementsByTagName('h3')[0].style.color = "#FFFFFF";
+    document.getElementsByTagName('h3')[1].style.color = "#FFFFFF";
 }
 
 
