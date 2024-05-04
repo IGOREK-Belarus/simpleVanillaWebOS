@@ -6,3 +6,11 @@ const kernelVersion = "1.0.0";
 const osName = "superVanillaWebOS"
 const osStream = "DEV";
 const osVersion = "1.0.0";
+
+function init(){
+    console.log("Initialization started!");
+    document.body.style.background = "#000000";
+}
+
+
+init();
