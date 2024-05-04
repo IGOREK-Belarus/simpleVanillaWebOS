@@ -1,0 +1,12 @@
+{
+    "main":{
+        "osName":"superVanillaWebOS",
+        "osSteam":"DEV",
+        "osVersion":"1.0.0"
+    },
+    "components":{
+        "loader":"",
+        "loginManager":"",
+        "userShell":""
+    }
+}
