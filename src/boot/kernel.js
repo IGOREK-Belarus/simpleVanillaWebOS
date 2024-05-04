@@ -29,6 +29,7 @@ function init(){
         osHeaderElement.appendChild(osHeaderText);
     }
     else{
+        panic("OS data is not found!");
         console.error("OS data is not found!");
     }
 
@@ -44,4 +45,10 @@ function panic(errorText){
     console.error("Kernel panic. Kernel name: " + kernelName + ". Kernel version: " + kernelVersion + ". Error: " + errorText)
 }
 
-init(); 
+function clearUp(){
+    document.getElementsByTagName('h1')[0].remove();
+    document.getElementsByTagName('h3')[0].remove();
+    document.getElementsByTagName('h3')[0].remove();
+}
+
+init();
