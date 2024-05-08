@@ -3,9 +3,11 @@ const KernelStream = "DEV";
 const kernelVersion = "1.0.0";
 
 // Firefox doesn't support, so we gonna duplicate data from os.json
-const osName = "simpleVanillaWebOS"
+const osName = "simpleVanillaWebOS";
 const osStream = "DEV";
 const osVersion = "1.0.0";
+
+let state = 0;
 
 function init(){
     console.log("Initialization started!");
@@ -42,7 +44,7 @@ function init(){
 function panic(errorText){
     // TODO: Improve it
     document.body.style.background = "#FF0000";
-    console.error("Kernel panic. Kernel name: " + kernelName + ". Kernel version: " + kernelVersion + ". Error: " + errorText)
+    console.error("Kernel panic. Kernel name: " + kernelName + ". Kernel version: " + kernelVersion + ". Error: " + errorText);
 }
 
 function clearUp(){
@@ -50,5 +52,17 @@ function clearUp(){
     document.getElementsByTagName('h3')[0].remove();
     document.getElementsByTagName('h3')[0].remove();
 }
+function startLoader(){
+    // Continues loading using Loader app
+    if(osData.loader.length > 1){
+        // TODO
+    }
+    else{
+        // No loader detected
+        state = 1;
+    }
+}
 
 init();
+import * as osData from "./osdata.js";
+startLoader();
