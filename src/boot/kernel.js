@@ -40,7 +40,7 @@ function init(){
 }
 
 function panic(errorText){
-    // WIP
+    // TODO: Improve it
     document.body.style.background = "#FF0000";
     console.error("Kernel panic. Kernel name: " + kernelName + ". Kernel version: " + kernelVersion + ". Error: " + errorText)
 }
