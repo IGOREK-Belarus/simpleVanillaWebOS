@@ -9,7 +9,7 @@ export function read(){
 }
 
 // Print
-// export function print(value){
-//     // TODO: Make it actually work.
-//     return value;
-// }
+export function print(value){
+     // TODO: Make it actually work.
+     return value;
+}
