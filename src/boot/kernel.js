@@ -48,9 +48,9 @@ function panic(errorText){
 }
 
 function clearUp(){
-    document.getElementsByTagName('h1')[0].remove();
-    document.getElementsByTagName('h3')[0].remove();
-    document.getElementsByTagName('h3')[0].remove();
+    for(let i = 0; i = 3; i++){
+        document.getElementsByTagName('h3')[0].remove();
+    }  
 }
 function startLoader(){
     // Continues loading using Loader app
