@@ -58,11 +58,12 @@ function startLoader(){
         // TODO
     }
     else{
-        // No loader detected
+        libTermUI.drawInteractiveBlocks();
         state = 1;
     }
 }
 
 init();
 import * as osData from "./osdata.js";
+import * as libTermUI from "../lib/libtrmui.js";
 startLoader();
