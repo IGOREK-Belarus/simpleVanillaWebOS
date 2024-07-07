@@ -14,7 +14,7 @@ export function drawInteractiveBlocks(){
 }
 
 function injectStyles(){
-    box.style.position = "absolute";
+    // box.style.position = "absolute";
     box.style.bottom = "0%";
     box.style.width = "100%";
     box.style.display = "flex";
