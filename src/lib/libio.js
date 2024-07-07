@@ -10,6 +10,9 @@ export function read(){
 
 // Print
 export function print(value){
-     // TODO: Make it actually work.
-     return value;
+     let headerElement = document.createElement("p");
+     let headerText = document.createTextNode(value);
+     document.body.appendChild(headerElement);
+     headerElement.appendChild(headerText);
+     return 0;
 }
