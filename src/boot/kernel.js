@@ -59,6 +59,7 @@ function startLoader(){
     }
     else{
         libTermUI.drawInteractiveBlocks();
+        let interactiveElements = libTermUI.getInteractiveObjectsLink();
         state = 1;
     }
 }

@@ -1,6 +1,8 @@
 // Lib Terminal UI - Special UI library for displaying needed stuff for terminal (In Kernel mode)
 
 let box;
+let input;
+let button;
 
 export function clear(){
     console.log("Clearning screen!");
@@ -25,15 +27,22 @@ function drawInputBar(){
     localBox.setAttribute("class", "interactiveTerminalBox");
     box = localBox;
     document.body.appendChild(box);
-    let input = document.createElement("input");
-    box.appendChild(input);
-    input.style.width = "90%";
+    let localInput = document.createElement("input");
+    box.appendChild(localInput);
+    localInput.style.width = "90%";
+    input = localInput;
 }
 
 function drawButton(){
-    let button = document.createElement("button");
+    let localButton = document.createElement("button");
     let buttonText = document.createTextNode(">");
-    button.appendChild(buttonText);
-    box.appendChild(button);
-    button.style.width = "5%";
+    localButton.appendChild(buttonText);
+    box.appendChild(localButton);
+    localButton.style.width = "5%";
+    button = localButton;
+}
+
+export function getInteractiveObjectsLink(){
+    let array = [input, button];
+    return array;
 }
