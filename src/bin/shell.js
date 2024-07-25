@@ -1,6 +1,6 @@
 // Default shell
-const shellName = "Shell"
-const shellVersion = "1.0.0"
+const shellName = "Shell";
+const shellVersion = "1.0.0";
 
 import * as libIO from "../lib/libio.js";
 
