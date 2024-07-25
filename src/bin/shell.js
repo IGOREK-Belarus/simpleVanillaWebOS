@@ -4,6 +4,9 @@ const shellVersion = "1.0.0";
 
 import * as libIO from "../lib/libio.js";
 
+// Now comes some dirty code - Built-in database
+import * as echo from "./echo.js";
+
 // Flags
 let dontUseUsersModule = true;
 let dontUseDirectory = true;
@@ -36,5 +39,19 @@ export function processCommand(command){
 
     }
 
+    devidedCommand[0] = devidedCommand[0].toLowerCase();
+
     console.log("Result: " + devidedCommand);
+
+    // Checking commands
+    switch(devidedCommand[0]){
+        case "echo":
+            let tempString = command.slice(indexesOfSpace[0], command.length);
+            console.log(tempString);
+            echo.run(tempString);
+            break;
+        default:
+            libIO.print("Command not found");
+            break;
+    }
 }
