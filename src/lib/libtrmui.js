@@ -1,4 +1,5 @@
 // Lib Terminal UI - Special UI library for displaying needed stuff for terminal (In Kernel mode)
+import * as shell from "../bin/shell.js";
 
 let box;
 let input;
@@ -40,6 +41,10 @@ function drawButton(){
     box.appendChild(localButton);
     localButton.style.width = "5%";
     button = localButton;
+    
+    localButton.addEventListener("click", function(){
+        shell.processCommand(input.value);
+    });
 }
 
 export function getInteractiveObjectsLink(){
