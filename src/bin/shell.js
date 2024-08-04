@@ -10,12 +10,14 @@ import * as echo from "./echo.js";
 // Flags
 let dontUseUsersModule = true;
 let dontUseDirectory = true;
+let dontPrintHeader = true;
+
 
 let currentUser;
 let currentDir;
 
 function generateHeaderOutput(){
-    return currentUser + "&" + currentDir + " $";
+    return currentUser + "&" + currentDir + " $ ";
 }
 
 export function processCommand(command){
@@ -41,7 +43,13 @@ export function processCommand(command){
 
     devidedCommand[0] = devidedCommand[0].toLowerCase();
 
-    
+
+    // Check for header flag
+    if(dontPrintHeader == false){
+        libIO.print(generateHeaderOutput() + command);
+    }
+
+
     // Checking commands
     switch(devidedCommand[0]){
         case "echo":
