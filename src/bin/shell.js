@@ -41,8 +41,7 @@ export function processCommand(command){
 
     devidedCommand[0] = devidedCommand[0].toLowerCase();
 
-    console.log("Result: " + devidedCommand);
-
+    
     // Checking commands
     switch(devidedCommand[0]){
         case "echo":
