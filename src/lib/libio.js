@@ -11,6 +11,7 @@ export function read(){
 // Print
 export function print(value){
      let headerElement = document.createElement("p");
+     headerElement.style.color = "white";
      let headerText = document.createTextNode(value);
      document.body.appendChild(headerElement);
      headerElement.appendChild(headerText);
