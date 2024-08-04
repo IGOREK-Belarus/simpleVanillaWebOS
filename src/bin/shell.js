@@ -47,7 +47,6 @@ export function processCommand(command){
     switch(devidedCommand[0]){
         case "echo":
             let tempString = command.slice(indexesOfSpace[0], command.length);
-            console.log(tempString);
             echo.run(tempString);
             break;
         default:
