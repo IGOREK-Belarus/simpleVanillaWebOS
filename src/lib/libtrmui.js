@@ -20,6 +20,8 @@ function injectStyles(){
     box.style.width = "100%";
     box.style.display = "flex";
     box.style.justifyContent = "center";
+    box.style.position = "fixed";
+    box.style.marginBottom = "10px";
 }
 
 function drawInputBar(){
