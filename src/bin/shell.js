@@ -12,7 +12,6 @@ let dontUseUsersModule = true;
 let dontUseDirectory = true;
 let dontPrintHeader = true;
 
-
 let currentUser;
 let currentDir;
 
