@@ -48,7 +48,6 @@ export function processCommand(command){
         libIO.print(generateHeaderOutput() + command);
     }
 
-
     // Checking commands
     switch(devidedCommand[0]){
         case "echo":
