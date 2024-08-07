@@ -9,7 +9,7 @@ import * as echo from "./echo.js";
 
 // Flags
 let dontUseUsersModule = true;
-let dontUseDirectory = true;
+let dontUseFileSystem = true;
 let dontPrintHeader = true;
 
 let currentUser;
@@ -48,7 +48,7 @@ export function processCommand(command){
         libIO.print(generateHeaderOutput() + command);
     }
 
-
+    
     // Checking commands
     switch(devidedCommand[0]){
         case "echo":
