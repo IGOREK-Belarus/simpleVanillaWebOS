@@ -9,7 +9,7 @@ import * as echo from "./echo.js";
 
 // Flags
 let dontUseUsersModule = true;
-let dontUseDirectory = true;
+let dontUseFileSystem = true;
 let dontPrintHeader = true;
 
 let currentUser;
