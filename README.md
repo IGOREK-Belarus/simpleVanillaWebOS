@@ -6,4 +6,4 @@
 ![GitHub Release](https://img.shields.io/github/v/release/IGOREK-Belarus/simpleVanillaWebOS)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/IGOREK-Belarus/simpleVanillaWebOS/latest)
 
-**simpleVanillaWebOS**
+**simpleVanillaWebOS** - OS *simulation* made with *HTML*, *CSS*, *JavaScript*
