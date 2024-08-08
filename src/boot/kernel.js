@@ -5,7 +5,7 @@ const kernelVersion = "0.1.0";
 // Firefox doesn't support, so we gonna duplicate data from os.json
 const osName = "simpleVanillaWebOS";
 const osStream = "DEV";
-const osVersion = "1.0.0";
+const osVersion = "0.1.2";
 
 let state = 0;
 
