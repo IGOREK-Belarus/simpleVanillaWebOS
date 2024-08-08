@@ -7,3 +7,6 @@
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/IGOREK-Belarus/simpleVanillaWebOS/latest)
 
 **simpleVanillaWebOS** - OS *simulation* made with *HTML*, *CSS*, *JavaScript*
+
+>[!Note]
+>This project still in development
