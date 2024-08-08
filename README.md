@@ -9,4 +9,4 @@
 **simpleVanillaWebOS** - OS *simulation* made with *HTML*, *CSS*, *JavaScript*
 
 >[!Note]
->This project still in development
+>This project is still in development
