@@ -1,8 +1,8 @@
 {
     "main":{
-        "osName":"superVanillaWebOS",
+        "osName":"simpleVanillaWebOS",
         "osSteam":"DEV",
-        "osVersion":"1.0.0"
+        "osVersion":"0.1.2"
     },
     "components":{
         "loader":"",
