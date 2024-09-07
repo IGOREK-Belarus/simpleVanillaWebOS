@@ -1,6 +1,6 @@
 import * as usersList from "../etc/users/userslist.js";
 
-// export let isRootEnabled = isRootEnabled;
+export let isRootEnabled = isRootEnabled;
 export function addUser(userName, password){
     let number = usersList.users.length;
     let isPossible;
