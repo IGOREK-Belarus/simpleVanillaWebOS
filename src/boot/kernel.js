@@ -42,8 +42,13 @@ function init(){
 }
 
 function panic(errorText){
-    // FIXME: Make it remove every element
+    // TODO: Improve it
     let numberOfElements = document.body.getElementsByTagName("*");
+    for(let i = 0; i < numberOfElements.length; i++){
+        if(!(numberOfElements[i].localName == "script")){
+            numberOfElements[i].remove();
+        }
+    }
     for(let i = 0; i < numberOfElements.length; i++){
         if(!(numberOfElements[i].localName == "script")){
             numberOfElements[i].remove();
