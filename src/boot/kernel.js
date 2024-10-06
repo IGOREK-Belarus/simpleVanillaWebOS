@@ -1,11 +1,11 @@
 const kernelName = "Kernel";
 const KernelStream = "DEV";
-const kernelVersion = "0.1.0";
+const kernelVersion = "0.2.0";
 
 // Firefox doesn't support, so we gonna duplicate data from os.json
 const osName = "simpleVanillaWebOS";
 const osStream = "DEV";
-const osVersion = "0.2.0";
+const osVersion = "0.3.0";
 
 let state = 0;
 
@@ -43,6 +43,17 @@ function init(){
 
 function panic(errorText){
     // TODO: Improve it
+    let numberOfElements = document.body.getElementsByTagName("*");
+    for(let i = 0; i < numberOfElements.length; i++){
+        if(!(numberOfElements[i].localName == "script")){
+            numberOfElements[i].remove();
+        }
+    }
+    for(let i = 0; i < numberOfElements.length; i++){
+        if(!(numberOfElements[i].localName == "script")){
+            numberOfElements[i].remove();
+        }
+    }
     document.body.style.background = "#FF0000";
     console.error("Kernel panic. Kernel name: " + kernelName + ". Kernel version: " + kernelVersion + ". Error: " + errorText);
 }
